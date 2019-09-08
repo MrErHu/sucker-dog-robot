@@ -4,17 +4,22 @@
   "description": "wexin sucker robot, an ass kisser, randomly pick a person in your group to flatter",
   "main": "index.js",
   "scripts": {
-    "weather": "node ./src/weather.js",
-    "suck": "node ./src/index.js",
-    "test": "cd sample && chmod +x index.sh && ./index.sh"
+    "weather": "node ./dist/weather.js",
+    "build:weather": "webpack --config build/webpack.weather.config.js"
   },
   "keywords": [
     "weixin",
     "robot"
   ],
-  "author": "Kira",
+  "author": "lei.wang",
   "license": "ISC",
   "dependencies": {
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
   }
 }

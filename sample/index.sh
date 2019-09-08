@@ -13,7 +13,6 @@ curl ${url}\
   {
     "msgtype": "text",
     "text": {
-      "content": "开饭啦",
-      "mentioned_list": ["@all"]
+      "content": "测试专用"
     }
   }'
