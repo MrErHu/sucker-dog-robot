@@ -15,6 +15,9 @@ const getWeather = (callback = () => {}) => {
         }else {
             const daily = data.results[0].daily[0];
             const message =
+                `防范疫情勿侥幸，人人有责当重视。\n`+
+                `戴口罩、勤洗手，勤消毒、勤通风。\n`+
+                `辽河雪融，富山花开；同气连枝，共盼春来。\n`+
                 `今日南京天气: ${daily.text_day}\n`+
                 `最高气温: ${daily.high}度\n`+
                 `最低气温: ${daily.low}度\n`+
